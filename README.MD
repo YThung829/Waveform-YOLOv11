@@ -29,6 +29,19 @@ python generate_data.py
 ```
 執行完畢後，系統會自動在專案內建立 dataset_v3 資料夾，並以 8:2 的比例切分好 train 與 val 資料集。
 
+如果需要手動標註資料, 可以用label studio來輔助標記
+```
+pip install label-studio
+label-studio
+```
+#### 初次在local打開要先sign up (個資不會上傳)
+#### 進去後create project > labeling setup > computer vision > object detection with bounding boxes
+#### 選擇好任務以後要設定label, 把預設的car移除改成你要的, 接著就可以上傳檔案開始標註
+#### 標註完後, 在那個project的頁面右上角選export, 選YOLO 就會是yolov11支援的txt格式了.
+
+##### 如果上傳檔案超出上限, 需要改成讓label studio sync local資料夾, 請向gemini請教
+
+
 ## 3.訓練模型
 資料夾下有 data.yaml, 預設使用 YOLOv11 Nano 輕量模型，訓練 50 個 Epochs
 
