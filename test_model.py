@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO("runs/detect/train5/weights/best.pt")
 
 # 輸入測試圖片路徑
-image_path = r"C:\Users\sodar\Projects\WaveForm\test_data\wave_test3.jpg"
+image_path = r"C:\Users\sodar\Projects\WaveForm\test_data\wave_test2.png"
 
 # 執行預測 (信心閥值設為 80%)
 results = model.predict(source=image_path, conf=0.8)
