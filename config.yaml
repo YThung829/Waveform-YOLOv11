@@ -1,0 +1,25 @@
+# ==========================================
+# Waveform Double-Arrow Generator Config
+# ==========================================
+
+dataset:
+  num_images: 1000          # 要生成的圖片總數
+  output_dir: "dataset_v3"  # 輸出的資料夾名稱
+  train_ratio: 0.8          # 訓練集比例 (預設 80% train, 20% val)
+
+canvas:
+  width_min: 600            # 圖片最小寬度
+  width_max: 1200           # 圖片最大寬度
+  height_min: 400           # 圖片最小高度
+  height_max: 800           # 圖片最大高度
+
+arrows:
+  min_count: 1              # 每張圖最少幾個箭頭
+  max_count: 3              # 每張圖最多幾個箭頭
+  color_variety: true       # 是否加入紫色/藍色等干擾色
+
+yolo_training:
+  model: "yolo11n.pt"       # 使用的預訓練模型
+  epochs: 50
+  imgsz: 800
+  batch_size: 2

@@ -43,7 +43,7 @@ python inference.py
 ```
 
 ## 已經訓練好的模型: 
-`wave_model_v2_augmented.pt`基於 YOLOv11 Nano 架構訓練，並在包含高強度文字干擾、不同顏色與箭頭粗細的驗證集（Validation Set）上進行了嚴格評估。
+`runs/detect/train5/weights/best.pt`基於 YOLOv11 Nano 架構訓練，並在包含高強度文字干擾、不同顏色與箭頭粗細的驗證集（Validation Set）上進行了嚴格評估。
 
 * **測試資料集規模：** 200 張生成的複雜波形圖（共包含 395 個雙箭頭實例）。
 * **硬體環境：** NVIDIA GeForce RTX 5070 Ti
