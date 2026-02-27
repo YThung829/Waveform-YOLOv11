@@ -1,0 +1,11 @@
+# waveform.yaml
+
+# 指定訓練集和驗證集的圖片路徑 (為求快速測試，我們先讓 train 和 val 讀取同一包資料)
+train: ./dataset_v2/images
+val: ./dataset_v2/images
+
+# 類別數量 (Number of classes)
+nc: 1
+
+# 類別名稱對應表 (0 對應到 double_arrow)
+names: ['double_arrow']

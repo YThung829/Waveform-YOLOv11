@@ -1,0 +1,14 @@
+# waveform.yaml
+
+# 指定資料集的根目錄 (建議加上這行，YOLO 找路徑會更穩)
+path: ./dataset_v2
+
+# 分別指向訓練集和驗證集的圖片資料夾
+train: train/images
+val: val/images
+
+# 類別數量
+nc: 1
+
+# 類別名稱對應表
+names: ['double_arrow']
